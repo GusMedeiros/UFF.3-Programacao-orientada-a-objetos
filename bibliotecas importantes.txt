@@ -1,0 +1,26 @@
+
+
+
+
+java.lang is for all the basic classes that are actually imported automatically 
+(implicitly) because it is all the basic ones (String, Integer, Double, etc)
+
+java.util contains all your data structures you learned in school and more. 
+Read the documentation, and the more you know and practice, the better
+
+java.io for file reading. Look into java.util.Scanner for simple file reading, but
+for any more complicated, low level file reading info, use java.io, its built for efficiency, while Scanner is for simplicity
+===============================================
+
+
+
+
+
+
+
+java.math if you ever need to use arbitrary precision values 
+(built-in in python, not in java)
+
+java.net for sockets, connections, etc
+
+javax.swing for GUI, which is an extension of the older java.awt
