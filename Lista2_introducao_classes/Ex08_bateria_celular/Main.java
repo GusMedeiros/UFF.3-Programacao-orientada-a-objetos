@@ -6,7 +6,7 @@ public class Main {
         System.out.println(celular.get_carga()+"%");
         celular.fazer_ligacao(60, "2199999999");
         System.out.println(celular.get_carga()+"%");
-        celular.enviar_sms("pq ele é pobre?", "2199999999");
+        celular.enviar_sms("recebeu esse sms?", "2199999999");
         System.out.println(celular.get_carga()+"%");
     }
 }
