@@ -1,0 +1,25 @@
+Existiria a classe mãe pokemon, uma classe filha de pokemon para cada tipo, e uma filha de cada tipo para
+cada um dos pokemon diferentes existentes.
+
+A classe mãe pokemon conteria atributos compartilhados por todos os pokemón listados no enunciado.
+
+Como o enunciado diz que todo pokemon de mesmo tipo tem os mesmos atributos base,
+é necessário que os tipos tenham cada um seu construtor.
+
+Como cada pokemón evolui de maneira diferente, ganha habilidades diferentes quando sobe de nível, etc, será necessária
+uma classe filha do seu respectivo tipo para cada um dos pokemon, com métodos específicos para eles.
+
+Ataque seria uma classe que carregaria os atributos brutos do ataque ao ser utilizado em combate, todos listados pelo
+enunciado. É uma classe destinada unicamente a calcular dano, não levando em conta efeitos especiais do ataque.
+
+Efeito seria uma classe mãe de todos os efeitos específicos do jogo, que se encarregariam as implementações dos efeitos
+negativos e positivos sofridos pelo pokemón alvo. Ex: Efeito.Paralisia.aplicarEfeito(Pokemon pokemon);
+
+Já em relação às habilidades, existiria uma classe mãe Habilidade, com os atributos Ataque ataque,
+ArrayList<Efeito> efeitos. Para cada habilidade do jogo, haveria uma classe filha de Habilidade, com seu respectivo
+construtor.
+
+Apesar de não mencionado diretamente no enunciado, como se trata de um jogo complexo, com interações consideravelmente
+complexas entre diferentes pokemón, ataques, etc. Seria útil ter classes encarregadas de gerenciar cada tipo de interação.
+Ex: GerenciadorAtaques.atacar(Ataque ataque, Pokemon pokemon);
+GerenciadorEfeitos.aplicarEfeito(Efeito efeito, Pokemon pokemon);

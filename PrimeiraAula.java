@@ -14,7 +14,7 @@ public class PrimeiraAula{
         System.out.println("Qual é a sua idade?");
         int idade;
         idade = teclado.nextInt();
-
+        teclado.nextLine();
         System.out.println("A sua idade é: "+idade);
 
         System.out.println("Qual a sua altura?");
